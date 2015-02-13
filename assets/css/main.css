@@ -8,14 +8,7 @@
  * URL: http://blacktie.co/
  */
 
-body #modalBody {
-    /* new custom width */
-    width: 0px;
-    height: 0px;
-    padding: 0px;
-    /* must be half of the width, minus scrollbar on the left (30px) */
-   
-}
+
 
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
