@@ -299,14 +299,24 @@ a:after {
     background-size: cover;
 }
 
+h1 {
+	color:#000000;
+	margin-top: -30px;
+	padding-bottom: 30px;
+	letter-spacing: 6px;
+	font-size: 80px;
+	
+	text-shadow: -3px 3px 2px #E0E0;
+}
+
 #headerwrap h1 {
 	color:#ffffff;
-	margin-top: 100px;
+	margin-top: -80px;
 	padding-bottom: 30px;
 	letter-spacing: 6px;
 	font-size: 150px;
 	font-weight: bold;
-	text-shadow: -3px 3px 2px #000,3px -3px 2px #000
+	text-shadow: -3px 3px 2px #000,3px -3px 2px #000;
 }
 
 #headerwrap p {
