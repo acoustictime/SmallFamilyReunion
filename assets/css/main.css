@@ -8,8 +8,15 @@
  * URL: http://blacktie.co/
  */
 
-
-
+#headerText
+{
+    color: black;
+    text-shadow:
+    -1px -1px 0 #bbb,
+    1px -1px 0 #bbb,
+    -1px 1px 0 #bbb,
+    1px 1px 0 #bbb;  
+}
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
@@ -299,7 +306,7 @@ a:after {
 	letter-spacing: 8px;
 	font-size: 100px;
 	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
+	text-shadow: -3px 3px 2px #000,3px -3px 2px #000
 }
 
 #headerwrap p {
