@@ -276,7 +276,7 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 575px;
+	min-height: 559px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -320,7 +320,7 @@ h1 {
 	line-height: 40px;
 	letter-spacing: 3px;
 	margin-left: 15px;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px 1px 1px #000;
 }
 
 #greywrap {
