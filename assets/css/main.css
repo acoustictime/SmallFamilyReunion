@@ -8,15 +8,6 @@
  * URL: http://blacktie.co/
  */
 
-#headerText
-{
-    color: black;
-    text-shadow:
-    -1px -1px 0 #bbb,
-    1px -1px 0 #bbb,
-    -1px 1px 0 #bbb,
-    1px 1px 0 #bbb;  
-}
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
@@ -285,7 +276,7 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 400px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
