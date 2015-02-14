@@ -1,110 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Small Family Picnic">
-    <meta name="author" content="James Small">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-    <title>Small Family Reunion</title>
-
-    <!-- Bootstrap core CSS -->   
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<head>
+  <title>Small Family Picnic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-  
-  
-  
-		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home">
-			<header class="clearfix">
-	  		 <!--		<h1 id="headerText">Small Family Picnic 2015</h1> -->
-	  		</header>	    
-	    </div><!-- /headerwrap -->
+<div class="container">
+  <img src="small1.jpg" class="img-responsive" alt="Cinque Terre" width="1200" height="800"> 
+</div>
+<br>
+<h1>Small Family Picnic 2015</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span><img src="basket.png"</></span></div>
+                    <div class="info">
+                        <h3 class="title">The Info</h3>
+                        <p>
+                            12 pending tasks awaiting approval and review.
+                        </p>
+                       
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                        <div class="image"><span><img src="phone.png"</></span></div>
+                    <div class="info">
+                        <h3 class="title">Contact Us</h3>
+                        <p>
+                            7 new messages over the past 24 hours. 
+                        </p>
+                
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                        <div class="image"><span><img src="bulb.gif"</></span></div>
+                    <div class="info">
+                        <h3 class="title">Ideas</h3>
+                        <p>
+                            47 new mentions for the past week.
+                        </p>
+                       
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- ==== GREYWRAP ==== -->
-		<div id="greywrap">
-		<div class="row">
-		<h1>Small Family Picnic 2015</h1>
-		</div>
-			<div class="row">
-				<div class="col-lg-4 callout">
-				<span class="icon"><img src="assets/img/basket.png"</></span>
-				<h2>The Info</h2>
-					<p><strong>When:</strong> July 11th, 2015  10:00am</p>
-					<p><strong>Where:</strong> Yorba Regional Park</p>
-					<p>Shelter # 4</p>
-					<p>7600 E La Palma Ave</p>
-					<p>Anaheim, CA. 928707</p>
-				</div><!-- col-lg-4 -->
-				
-				<div class="col-lg-4 callout">
-				<span class="icon"><img src="assets/img/phone.png"</></span>
-				<h2>Contact Us</h2>
-				
-					<p>When: July 11th, 2015  10:00am</p>
-					<p>Where: Yorba Regional Park Shelter # 4 </p>
-					<p>7600 E La Palma Ave Anaheim, CA. 928707</p>
-				</div><!-- col-lg-4 -->
-				
-				<div class="col-lg-4 callout">
-					<span class="icon"><img src="assets/img/bulb.gif"</></span>
-					<h2>Ideas</h2>
-					<p>Press the button below to give us your thoughts, ideas, change of address, or anything else relating to the picnic</p>
-				<button class="btn btn-default" type="submit" id="submit">Click Here To Give Us Ideas</button>
-				</div><!-- col-lg-4 -->	
-			</div><!-- row -->
-		</div><!-- greywrap -->
-	
+<style>
 
-		<div id="footerwrap">
-			<div class="container">
-				<h4>Created by a Small</h4>
-			</div>
-		</div>
+body {
+background: #f5f5f5;
+font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    background: #f5f5f5;
 
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
 
-<div class="modal fade" id="submitModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <p>One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-		
+h1 {
+	color:#000000;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	letter-spacing: 3px;
+	font-size: 60px;
+	text-align:center;
+	text-shadow: -3px 3px 2px #E0E0;
+}
 
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/retina.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+.white {
+    color: white;
+}
+
+.btn-lg {
+    font-size: 38px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+.box > .icon {
+    text-align: center;
+    position: relative;
+}
+
+.box > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 7px #f5f5f5;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    vertical-align: middle;
+}
+
+.box > .icon:hover > .image {
+    border: 2px solid black;
+}
+
+.box > .icon > .image > i {
+    font-size: 40px !important;
+    color: #fff !important;
+}
+
+.box > .icon:hover > .image > i {
+    color: white !important;
+}
+
+.box > .icon > .info {
+    margin-top: -24px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+}
+
+    .box > .icon > .info > h3.title {
+        color: #222;
+        font-weight: 500;
+    }
+
+    .box > .icon > .info > p {
+        color: #666;
+        line-height: 1.5em;
+        margin: 20px;
+    }
+
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+    color: #222;
+}
+
+.box > .icon > .info > .more a {
+    color: #222;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box > .icon:hover > .info > .more > a {
+    color: #000;
+    padding: 6px 8px;
+    border-bottom: 2px solid black;
+}
+
+.box .space {
+    height: 30px;
+}
+</style>
+
+</body>
 </html>
