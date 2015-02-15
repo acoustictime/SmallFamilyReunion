@@ -47,7 +47,8 @@ $("#myModal").modal('show');
 
 // window.open ('https://docs.google.com/forms/d/1QJSUpOCFLZiZgEggnthwhTTz8lI7icZQWze-dy4CoUU/formResponse?entry.784094184=TEST&entry.203616030=TEST#','_self',false)
 
-		
+
+
 		$.ajax({
                 url: "https://docs.google.com/forms/d/1QJSUpOCFLZiZgEggnthwhTTz8lI7icZQWze-dy4CoUU/formResponse",
                 data: {"entry.784094184" : text, "entry.203616030" : email},
@@ -56,10 +57,10 @@ $("#myModal").modal('show');
                 statusCode: {
                     0: function (){
  
-                     
+                    
                     },
                     200: function (){
-                        
+                     
                        
                     }
                 }
@@ -85,8 +86,5 @@ $("#myModal").modal('show');
 	});
 
 
-  function validateEmail(email) { 
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-} 
+ 
 });
