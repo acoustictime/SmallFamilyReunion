@@ -4,16 +4,19 @@
   <title>Small Family Picnic</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>
 
 <div class="container">
-  <img src="img/small1.jpg" class="img-responsive" alt="Small" width="1200" height="800"> 
+  <div id="header">
+    <img src="img/small1.jpg" class="img-responsive" alt="Small" width="1200" height="800"> 
+  </div>
 </div>
 <br>
 <h1>Small Family Picnic 2015</h1>
@@ -23,11 +26,13 @@
             <div class="box">
                 <div class="icon">
                     <div class="image"><span><img src="img/basket.png"</></span></div>
-                    <div class="info">
+                    <div class="info" id="left">
                         <h3 class="title">The Info</h3>
-                        <p><strong>When: </strong> July 11th, 2015  10:00am</p>
-                        <p><strong>Where: </strong> Yorba Linda Regional Park</p>
-                       
+                        <p>July 11th, 2015 - 10:00am</p>
+                        <p>Yorba Regional Park - Shelter # 4</p>            
+                        <p>7600 E La Palma Ave</p>
+                        <p>Anaheim, CA. 92807</p>
+                        <p>**More Details to Follow**</p>
                     </div>
                 </div>
                 <div class="space"></div>
@@ -39,10 +44,9 @@
                         <div class="image"><span><img src="img/phone.png"</></span></div>
                     <div class="info">
                         <h3 class="title">Contact Us</h3>
-                        <p>
-                            7 new messages over the past 24 hours. 
-                        </p>
-                
+                        <p>Feel free to contact us about anything.  Either click envelope below for email or send out a message on the family Facebook by following the link below.  You can also fill out the form under the ideas section.</p>
+                		<span><img src="img/mail.png"</></span>
+                		<span><img src="img/fb.png"</></span>
                     </div>
                 </div>
                 <div class="space"></div>
@@ -51,16 +55,20 @@
         <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="box">
                 <div class="icon">
-                        <div class="image"><span><img src="img/bulb.gif"</></span></div>
+                        <div class="image"><span><img src="img/bulb.png"</></span></div>
                     <div class="info">
                         <h3 class="title">Ideas</h3>
-                        <p>
-                            47 new mentions for the past week.
-                        </p>
-                       
+                       <p>Click the button below and fill out the form if you have any ideas or comments for the 2015 picnic.  We are always open to new ideas.  
+                       If you want us to get back to you, just leave your email address as well.</p>
+                       <br>
+ 						<button type="submit" class="btn btn-default" id="openModal">Give Us Ideas</button>
+ 						<br>
+ 						<br>
+ 						
+ 						<div id="finalAlert"></div>
                     </div>
                 </div>
-                <div class="space"></div>
+                
             </div>
         </div>
     </div>
@@ -70,125 +78,51 @@
   <span class="copyright">Created By A Small</span>
 </footer>
 
-<style>
+<!-- Start of Modal -->
 
-footer {
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:60px;
-}
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Ideas Form</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+        <label for="comment">Fill in your ideas below</label>
+     	  <textarea class="form-control" rows="5" id="comment"></textarea>
+     	  <br>
+     	  <div id="boxAlert"></div>
+     	  <label for="email">Enter your Email Address</label>
+  		  <input type="text" class="form-control" id="email">
+  		  <br>
+  		  <div id="emailAlert"></div>
+   	  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
-body {
-background: #f5f5f5;
-font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    background: #f5f5f5;
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-}
+  ga('create', 'UA-59761655-1', 'auto');
+  ga('send', 'pageview');
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-    font-weight: 300;
-    color: #333;
-}
+</script>
 
-h1 {
-	color:#000000;
-	margin-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 1px;
-	padding-right: 1px;
-	letter-spacing: 3px;
-	font-size: 60px;
-	text-align:center;
-	text-shadow: -3px 3px 2px #E0E0;
-}
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-.white {
-    color: white;
-}
 
-.btn-lg {
-    font-size: 38px;
-    line-height: 1.33;
-    border-radius: 6px;
-}
-
-.box > .icon {
-    text-align: center;
-    position: relative;
-    
-}
-
-.box > .icon > .image {
-    position: relative;
-    z-index: 2;
-    margin: auto;
-    width: 88px;
-    height: 88px;
-    border: 7px #f5f5f5;
-    line-height: 88px;
-    border-radius: 50%;
-    background: #f5f5f5;
-    vertical-align: middle;
-}
-
-.box > .icon:hover > .image {
-    border: 2px solid black;
-}
-
-.box > .icon > .image > i {
-    font-size: 40px !important;
-    color: #fff !important;
-}
-
-.box > .icon:hover > .image > i {
-    color: white !important;
-}
-
-.box > .icon > .info {
-    margin-top: -24px;
-    background: rgba(0, 0, 0, 0.04);
-    border: 1px solid #e0e0e0;
-    padding: 15px 0 10px 0;
-    border-radius: 15px;
-}
-
-    .box > .icon > .info > h3.title {
-        color: #222;
-        font-weight: 500;
-    }
-
-    .box > .icon > .info > p {
-        color: #666;
-        line-height: 1.5em;
-        margin: 20px;
-    }
-
-.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
-    color: #222;
-}
-
-.box > .icon > .info > .more a {
-    color: #222;
-    line-height: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.box > .icon:hover > .info > .more > a {
-    color: #000;
-    padding: 6px 8px;
-    border-bottom: 2px solid black;
-}
-
-.box .space {
-    height: 30px;
-}
-</style>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
