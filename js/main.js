@@ -26,7 +26,7 @@ $("#myModal").modal('show');
 		}
 		  return;
 		}
-		
+			email = email.trim();
 		  
 		  if(email != "") {
 		
