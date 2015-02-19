@@ -117,6 +117,7 @@ border-radius: 15px;
 .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
     color: #000;
     font-weight:500;
+    font-size:20px;
 }
 
 .box > .icon:hover > .info > button {
