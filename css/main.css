@@ -1,3 +1,7 @@
+html.touch *:hover {
+    pointer-events: none !important;
+}
+
 textarea {
     resize: none;
 }
@@ -117,7 +121,7 @@ border-radius: 15px;
 .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
     color: #000;
     font-weight:500;
-    font-size:20px;
+    font-size:18px;
 }
 
 .box > .icon:hover > .info > button {
